@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/profile_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true">
+        </TextView>
+
+        <TextView
+            android:id="@+id/home_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_below="@id/profile_text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/slash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_below="@id/profile_text"
+            android:layout_toRightOf="@id/home_text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+
+        <TextView
+            android:id="@+id/user_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_below="@id/profile_text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="75dp"/>
+
+        <TextView
+            android:id="@+id/slash_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_below="@id/profile_text"
+            android:layout_toRightOf="@id/home_text"
+            android:layout_marginLeft="50dp" />
+
+
+        <TextView
+
+            android:id="@+id/below_profile_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_below="@id/profile_text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="120dp"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/below_profile_text"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:elevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/dashboard_image"
+                    android:layout_width="86dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/profile_account" />
+
+                <TextView
+                    android:id="@+id/admin_account_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:text="@string/admin_account"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/account_admin_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:text="admin"
+                    android:layout_marginBottom="15dp"
+                    android:layout_below="@id/admin_account_text"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_view_1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:elevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Tabs -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <!-- First Tab -->
+
+                    <TextView
+                        android:id="@+id/tab1_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Overview"
+                        android:textStyle="bold"
+                        android:layout_marginRight="2dp"
+                        android:textColor="@color/lavender"
+                        android:textSize="14dp" />
+
+                    <!-- Second Tab -->
+                    <TextView
+                        android:id="@+id/tab2_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Edit Profile"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <!-- Third Tab -->
+                    <TextView
+                        android:id="@+id/tab3_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:text="Change Password"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+                <!-- Line -->
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="@color/grey"
+                    android:layout_marginTop="5dp"
+                   />
+
+                <TextView
+                    android:id="@+id/profile_details_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Profile Details"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"/>
+
+                <!-- Table Layout -->
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_details_text">
+
+                    <!-- Row 1 -->
+                    <TableRow>
+                        <!-- Column 1 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Full Name"
+                            android:textColor="@color/black"
+                            android:padding="10dp" />
+
+                        <!-- Column 2 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Account Admin"
+                            android:padding="10dp" />
+                    </TableRow>
+
+                    <!-- Row 2 -->
+                    <TableRow>
+                        <!-- Column 1 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Birthday"
+                            android:textColor="@color/black"
+                            android:padding="10dp" />
+
+                        <!-- Column 2 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="2002-07-04"
+                            android:padding="10dp" />
+                    </TableRow>
+
+                    <TableRow>
+                        <!-- Column 1 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Address"
+                            android:textColor="@color/black"
+                            android:padding="10dp" />
+
+                        <!-- Column 2 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Sumpong"
+                            android:padding="10dp" />
+                    </TableRow>
+
+                    <TableRow>
+                        <!-- Column 1 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Phone"
+                            android:textColor="@color/black"
+                            android:padding="10dp" />
+
+                        <!-- Column 2 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="097560019886"
+                            android:padding="10dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginBottom="10dp">
+                        <!-- Column 1 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Email"
+                            android:textColor="@color/black"
+                            android:padding="10dp" />
+
+                        <!-- Column 2 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="admin@gmail.com"
+                            android:padding="10dp" />
+                    </TableRow>
+
+
+
+                </TableLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

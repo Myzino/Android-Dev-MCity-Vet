@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="MENU">
+        <menu android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_dashboard"
+                android:icon="@drawable/nav_dashboard"
+                android:title="Dashboard" />
+            <item
+                android:id="@+id/nav_appointments"
+                android:icon="@drawable/nav_appointments"
+                android:title="Appointments" />
+            <item
+                android:id="@+id/nav_appointment_record"
+                android:icon="@drawable/nav_appointment_record"
+                android:title="Appointment Record" />
+        </menu>
+    </item>
+
+    <item android:title="USER">
+        <menu android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/nav_profile"
+                android:title="Profile" />
+            <item
+                android:id="@+id/nav_weather"
+                android:icon="@drawable/nav_weather"
+                android:title="Weather" />
+        </menu>
+    </item>
+
+    <item android:title="SYSTEM">
+        <menu android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_account_management"
+                android:icon="@drawable/nav_account_management"
+                android:title="Account Management" />
+            <item
+                android:id="@+id/nav_system_logs"
+                android:icon="@drawable/nav_system_logs"
+                android:title="System Logs" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/nav_logout"
+        android:title="Logout" />
+
+</menu>

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".AppointmentRecordFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/view_appointment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Appointment"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentLeft="true">
+        </TextView>
+
+        <TextView
+            android:id="@+id/home_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_below="@id/view_appointment_text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/slash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_below="@id/view_appointment_text"
+            android:layout_toRightOf="@id/home_text"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+
+        <TextView
+            android:id="@+id/user_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointment"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_below="@id/view_appointment_text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="75dp"/>
+
+        <TextView
+            android:id="@+id/slash_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_below="@id/view_appointment_text"
+            android:layout_toRightOf="@id/home_text"
+            android:layout_marginLeft="105dp" />
+
+
+        <TextView
+
+            android:id="@+id/below_profile_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Appointment"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_below="@id/view_appointment_text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="175dp"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:elevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Tabs -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <TextView
+                        android:id="@+id/my_appointment_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="My Appointment"
+                        android:textStyle="bold"
+                        android:layout_marginRight="2dp"
+                        android:textColor="@color/blue"
+                        android:textSize="14dp"
+                        android:layout_marginLeft="10dp"/>
+
+
+
+                </LinearLayout>
+
+                <!-- Table Layout -->
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <!-- Row 1 -->
+                    <TableRow>
+                        <!-- Column 1 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Appointment ID"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:padding="10dp" />
+
+                        <!-- Column 2 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:padding="10dp" />
+                    </TableRow>
+
+                    <TableRow>
+                        <!-- Column 1 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Technician"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:padding="10dp" />
+
+                        <!-- Column 2 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:padding="10dp" />
+                    </TableRow>
+
+                    <TableRow>
+                        <!-- Column 1 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Status"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:padding="10dp" />
+
+                        <!-- Column 2 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:padding="10dp" />
+                    </TableRow>
+
+                    <TableRow>
+                        <!-- Column 1 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Schedule"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"/>
+
+                        <!-- Column 2 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:padding="10dp" />
+                    </TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Information"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:textSize="14dp"/>
+
+                    <TableRow>
+                        <!-- Column 1 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Customer's Name"
+                            android:textColor="@color/black"
+                            android:padding="10dp" />
+
+                        <!-- Column 2 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:padding="10dp" />
+                    </TableRow>
+
+                    <TableRow>
+                        <!-- Column 1 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Phone Number"
+                            android:textColor="@color/black"
+                            android:padding="10dp" />
+
+                        <!-- Column 2 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:padding="10dp" />
+                    </TableRow>
+
+                    <TableRow>
+                        <!-- Column 1 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Email"
+                            android:textColor="@color/black"
+                            android:padding="10dp" />
+
+                        <!-- Column 2 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:padding="10dp" />
+
+                    </TableRow>
+
+                    <TableRow>
+                        <!-- Column 1 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Address"
+                            android:textColor="@color/black"
+
+                            android:padding="10dp" />
+
+                        <!-- Column 2 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:padding="10dp" />
+
+                    </TableRow>
+
+                    <TableRow>
+                        <!-- Column 1 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Landmark"
+                            android:textColor="@color/black"
+
+                            android:padding="10dp" />
+
+                        <!-- Column 2 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:padding="10dp" />
+
+                    </TableRow>
+
+                    <TableRow>
+                        <!-- Column 1 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Service"
+                            android:textColor="@color/black"
+
+                            android:padding="10dp" />
+
+                        <!-- Column 2 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:padding="10dp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Animal"
+                            android:textColor="@color/black"
+                            android:padding="10dp" />
+
+                        <!-- Column 2 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:padding="10dp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Age"
+                            android:textColor="@color/black"
+                            android:padding="10dp" />
+
+                        <!-- Column 2 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:padding="10dp" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Number of Heads"
+                            android:textColor="@color/black"
+                            android:padding="10dp" />
+
+                        <!-- Column 2 -->
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:padding="10dp" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

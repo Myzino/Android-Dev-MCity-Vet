@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">MCityVet</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="dashboard">Dashboard</string>
+    <string name="home">Home</string>
+    <string name="hello_admin">Hello, Admin !</string>
+    <string name="text_1">We care about your animal.</string>
+    <string name="text_2">We provide the best service for your animal. Our team is always ready to help you.</string>
+    <string name="text_3">Our team is always ready to help you.</string>
+    <string name="btn_1">Book Your First Appointment!</string>
+
+    <string name="admin">Admin</string>
+    <string name="technician">Technician</string>
+    <string name="secretary">Secretary</string>
+    <string name="customer">Customer</string>
+
+    <string name="appointments">Appointments</string>
+    <string name="create_appointments">Create Appointment</string>
+    <string name="col_1">ID</string>
+    <string name="col_2">Date</string>
+    <string name="col_3">Schedule</string>
+    <string name="col_4">Client</string>
+    <string name="col_5">Animal</string>
+    <string name="col_6">Age</string>
+    <string name="col_7">No. of Heads</string>
+    <string name="col_8">Services</string>
+    <string name="col_9">Status</string>
+    <string name="col_10">Action</string>
+    <string name="row_1">05/9/2024</string>
+
+    <string name="view_btn">View</string>
+
+    <string name="profile">Profile</string>
+    <string name="user">User</string>
+    <string name="admin_account">Admin Account</string>
+</resources>
